@@ -37,7 +37,7 @@ export const MovieCard = (props) => {
                   <small className="text-muted">Rating: {vote_average}</small>
                 </p>
                 <Link
-                  to={`/movie/${id}`}
+                  to={`/${media_type}/${id}`}
                 >
                   ... See More
                 </Link>

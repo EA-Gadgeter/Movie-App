@@ -5,19 +5,16 @@ import { Home, Trending, Top10, Login, Movie } from '../pages';
 
 export const MovieRoutes = () => {
 
-    // const {movies, isLoading} = useFetchTrending();
-    // console.log("movies", movies);
-
   return (
     <React.Fragment>
-        <Navbar/>
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/trending" element={<Trending/>}/>
-            <Route path="/top10" element={<Top10/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/movie/:movieId" element={<Movie/>}/>
-        </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/trending" element={<Trending />} />
+        <Route path="/top10" element={<Top10 />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/:media_type/:movieId" element={<Movie />} />
+      </Routes>
     </React.Fragment>
   )
 }

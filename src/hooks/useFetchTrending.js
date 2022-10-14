@@ -15,5 +15,5 @@ export const useFetchTrending = () => {
         getTrendingMovies();
     }, []);
 
-    return {movies, isLoading};
+    return { movies, isLoading };
 };

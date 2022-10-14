@@ -5,9 +5,10 @@ import { MovieCard } from '../components/MovieCard';
 
 export const Movie = () => {
 
-  const { movieId } = useParams();
+  const { movieId, media_type } = useParams();
+  const { movie } = useFetchMovieById(movieId, media_type);
 
-  const { movie } = useFetchMovieById(movieId);
+  console.log(movie);
 
   return (
     <div className="text-center">

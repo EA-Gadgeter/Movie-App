@@ -13,7 +13,6 @@ export const Trending = () => {
   if (filter === "all") {
     filteredContent = movies;
   } else {
-    console.log(filter);
     filteredContent = movies.filter(movie => movie.media_type === filter);
   }
 

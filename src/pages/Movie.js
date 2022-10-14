@@ -8,8 +8,6 @@ export const Movie = () => {
   const { movieId, media_type } = useParams();
   const { movie } = useFetchMovieById(movieId, media_type);
 
-  console.log(movie);
-
   return (
     <div className="text-center">
       <MovieCard
